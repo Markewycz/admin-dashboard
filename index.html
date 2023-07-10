@@ -84,24 +84,42 @@
       <div class="search-container">
         <div class="search-bar">
           <label for="search"
-            ><button type="button" class="search-button">
+            ><button type="button" class="button search-button">
               <i class="fa-solid fa-magnifying-glass"></i></button
           ></label>
           <input type="text" id="search" name="search" class="input-search" />
         </div>
       </div>
 
-      <div class="user-profile">
-        <div class="user-notifications"></div>
-        <div class="user-avatar small-avatar"></div>
-        <div class="user-name">John Doe</div>
+      <div class="user-profile-container">
+        <div class="user-notifications">
+          <button type="button" class="button notifications-button">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+        </div>
+        <div class="user-avatar-container">
+          <img
+            src="/assets/images/avatar-small.jpeg"
+            alt="avatar"
+            class="avatar small-avatar"
+          />
+        </div>
+        <div class="user-name-container">
+          <span class="user-name">John Doe</span>
+        </div>
       </div>
 
       <div class="header-user-container">
-        <div class="user-avatar big-avatar"></div>
+        <div class="user-avatar-container">
+          <img
+            src="/assets/images/avatar-large.jpeg"
+            alt="avatar"
+            class="avatar large-avatar"
+          />
+        </div>
         <div class="user-welcome">
-          <p>Hi there,</p>
-          <p>John Doe (@johndoe)</p>
+          <h5>Hi there,</h5>
+          <h4>John Doe (@johndoe)</h4>
         </div>
       </div>
 
@@ -114,7 +132,7 @@
 
     <main class="main-container">
       <section class="projects">
-        <h2 class="projects-title">Your Projects</h2>
+        <h3 class="projects-title title">Your Projects</h3>
         <div class="card project-card">
           <div class="project-header">Super cool project</div>
           <div class="project-body">
@@ -204,10 +222,10 @@
       </section>
 
       <article class="announcements-container">
-        <h2 class="announcements-title">Announcements</h2>
+        <h3 class="announcements-title title">Announcements</h3>
         <div class="card announcements">
           <article class="announcement">
-            <h3>Announcement</h3>
+            <h4>Announcement</h4>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Deleniti, ut amet praesentium enim porro impedit quisquam
@@ -215,7 +233,7 @@
             </p>
           </article>
           <article class="announcement">
-            <h3>Announcement</h3>
+            <h4>Announcement</h4>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Deleniti, ut amet praesentium enim porro impedit quisquam
@@ -223,7 +241,7 @@
             </p>
           </article>
           <article class="announcement">
-            <h3>Announcement</h3>
+            <h4>Announcement</h4>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Deleniti, ut amet praesentium enim porro impedit quisquam
@@ -234,7 +252,7 @@
       </article>
 
       <article class="trending-container">
-        <h2 class="trending-title">Trending</h2>
+        <h3 class="trending-title title">Trending</h3>
         <div class="card trending">
           <article class="user-card">
             <div class="user-avatar"></div>
