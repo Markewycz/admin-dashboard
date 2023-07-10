@@ -12,9 +12,16 @@
 body {
   height: 100vh;
   font-family: "Mona Sans", sans-serif;
+  font-size: 16px;
+
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: clamp(240px, 20%, 320px) repeat(5, 1fr);
+  grid-template-rows: 200px repeat(5, 1fr);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* SIDEBAR */
@@ -68,7 +75,7 @@ body {
   grid-row: 2 / -1;
 
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr) clamp(280px, 20%, 350px);
   grid-template-rows: repeat(6, 1fr);
 }
 
@@ -78,8 +85,8 @@ body {
   grid-row: 1 / -1;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 50px) repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto repeat(3, 1fr);
 }
 
 .projects-title {
@@ -96,7 +103,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 .trending-container {
@@ -105,5 +112,50 @@ body {
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+/* STYLING */
+.sidebar {
+  background-color: #588157;
+  color: #fff;
+
+  padding: 20px;
+  font-size: 1.6rem;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+}
+
+.nav-list {
+  margin-left: 45px;
+}
+
+.nav-list li {
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.main-container {
+  background-color: #e2e8f0;
+
+  padding: 30px 20px;
+  gap: 30px;
+}
+
+.projects {
+  gap: 30px;
+}
+
+.projects > :first-child {
+  margin-bottom: -30px;
+}
+
+.card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 15px;
 }

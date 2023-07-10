@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="/assets/styles/styles.css" />
-    <script src="/assets/scripts/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4616b97752.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/scripts/script.js" defer></script>
   </head>
   <body>
     <aside class="sidebar">
@@ -14,19 +18,46 @@
         SOME LOGO
       </div>
       <nav class="nav-container">
-        <ul class="nav-list">
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
+        <ul class="nav-list fa-ul">
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-house"></i></span
+            ><a href="">Home</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-regular fa-address-card"></i></span
+            ><a href="">Profile</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-message"></i></span
+            ><a href="">Messages</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-clock"></i></span
+            ><a href="">History</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-file"></i></span
+            ><a href="">Tasks</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-users"></i></span
+            ><a href="">Communities</a>
+          </li>
         </ul>
 
-        <ul class="nav-list settings">
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
+        <ul class="nav-list settings fa-ul">
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-gear"></i></span
+            ><a href="">Settings</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-user"></i></span
+            ><a href="">Support</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-lock"></i></span
+            ><a href="">Privacy</a>
+          </li>
         </ul>
       </nav>
     </aside>
@@ -64,7 +95,7 @@
     <main class="main-container">
       <section class="projects">
         <h2 class="projects-title">Your Projects</h2>
-        <div class="project-card">
+        <div class="card project-card">
           <div class="project-header">Super cool project</div>
           <div class="project-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -79,7 +110,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="card project-card">
           <div class="project-header">Super cool project</div>
           <div class="project-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -94,7 +125,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="card project-card">
           <div class="project-header">Super cool project</div>
           <div class="project-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -108,7 +139,7 @@
             <button type="button">Source</button>
           </div>
         </div>
-        <div class="project-card">
+        <div class="card project-card">
           <div class="project-header">Super cool project</div>
           <div class="project-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -122,7 +153,7 @@
             <button type="button">Source</button>
           </div>
         </div>
-        <div class="project-card">
+        <div class="card project-card">
           <div class="project-header">Super cool project</div>
           <div class="project-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -136,7 +167,7 @@
             <button type="button">Source</button>
           </div>
         </div>
-        <div class="project-card">
+        <div class="card project-card">
           <div class="project-header">Super cool project</div>
           <div class="project-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -154,7 +185,7 @@
 
       <article class="announcements-container">
         <h2 class="announcements-title">Announcements</h2>
-        <div class="announcements">
+        <div class="card announcements">
           <article class="announcement">
             <h3>Announcement</h3>
             <p>
@@ -184,7 +215,7 @@
 
       <article class="trending-container">
         <h2 class="trending-title">Trending</h2>
-        <div class="trending">
+        <div class="card trending">
           <article class="user-card">
             <div class="user-avatar"></div>
             <div class="user-info">
