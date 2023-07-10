@@ -1,6 +1,109 @@
+@font-face {
+  font-family: "Mona Sans";
+  src: url("../MonaSans.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+}
+
+body {
+  height: 100vh;
+  font-family: "Mona Sans", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+/* SIDEBAR */
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 50px;
+}
+
+/* HEADER */
+.header {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.search-container {
+  grid-column: 1 / 4;
+}
+
+.user-profile {
+  grid-column: 4 / 6;
+}
+
+.header-user-container {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+.activities {
+  grid-column: 4 / 6;
+  grid-row: 2 / 3;
+}
+
+/* MAIN CONTAINER*/
+.main-container {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+/* PROJECTS */
+.projects {
+  grid-column: 1 / 5;
+  grid-row: 1 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 50px) repeat(3, 1fr);
+}
+
+.projects-title {
+  grid-column: 1 / -1;
+}
+
+.project-card {
+}
+
+/* ANNOUNCEMENTS */
+.announcements-container {
+  grid-column: 5 / 6;
+  grid-row: 1 / 4;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+}
+
+.trending-container {
+  grid-column: 5 / 6;
+  grid-row: 4 / -1;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
 }
