@@ -575,10 +575,12 @@ a {
   body {
     grid-template-rows: 50px 1fr;
   }
+
   .projects {
     overflow: visible;
     margin-right: 0;
   }
+
   .projects-container {
     overflow: visible;
     padding-right: 0;
@@ -599,6 +601,10 @@ a {
 
   .search-bar {
     margin-left: 25px;
+  }
+
+  .input-search {
+    font-size: 16px;
   }
 
   .header-user-container {
