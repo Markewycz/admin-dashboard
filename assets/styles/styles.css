@@ -107,7 +107,7 @@ a {
   grid-row: 2 / 3;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, clamp(100px, 20%, 110px));
+  grid-template-columns: repeat(3, clamp(100px, 90%, 140px));
   grid-template-rows: 1fr;
   justify-content: flex-end;
   align-items: center;
@@ -120,7 +120,7 @@ a {
 
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(auto-fill, 1fr);
   grid-template-areas:
     "projects announcements"
     "projects announcements"
