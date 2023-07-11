@@ -534,7 +534,7 @@ a {
 
 @media (max-width: 840px) {
   .fa-ul {
-    margin-left: 0;
+    /* margin-left: 0; */
   }
 
   body {
