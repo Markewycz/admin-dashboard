@@ -501,6 +501,14 @@ a {
   color: var(--secondary-color-darker);
 }
 
+.input-search::placeholder {
+  /* padding-left: 10px; */
+  color: var(--secondary-color-darker);
+}
+.input-search {
+  padding-left: 20px;
+}
+
 /* MEDIA-QUERIES */
 
 @media (max-width: 1080px) {
