@@ -531,6 +531,7 @@ a {
 
   body {
     grid-template-columns: 50px repeat(4, 1fr);
+    height: 100svh;
   }
   .logo-container {
     margin-top: 10px;
