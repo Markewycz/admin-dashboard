@@ -4,53 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="/assets/styles/styles.css" />
-    <script src="/assets/scripts/script.js"></script>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4616b97752.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/scripts/script.js" defer></script>
   </head>
   <body>
     <aside class="sidebar">
       <div class="logo-container">
-        <!-- SVG Logo -->
-        SOME LOGO
+        <img src="assets/images/logo.svg" alt="logo" class="logo" />
       </div>
       <nav class="nav-container">
-        <ul class="nav-list">
-          <li>Home</li>
-          <li>Profile</li>
-          <li>Messages</li>
-          <li>History</li>
-          <li>Tasks</li>
-          <li>Communities</li>
+        <ul class="nav-list fa-ul">
+          <li>
+            <a href=""
+              ><span class="fa-li"><i class="fa-solid fa-house"></i></span
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa-li"
+                ><i class="fa-regular fa-address-card"></i></span
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa-li"><i class="fa-solid fa-message"></i></span
+              >Messages</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa-li"><i class="fa-solid fa-clock"></i></span
+              >History</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa-li"><i class="fa-solid fa-file"></i></span
+              >Tasks</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa-li"><i class="fa-solid fa-users"></i></span
+              >Communities</a
+            >
+          </li>
         </ul>
 
-        <ul class="nav-list settings">
-          <li>Settings</li>
-          <li>Support</li>
-          <li>Privacy</li>
+        <ul class="nav-list settings fa-ul">
+          <li>
+            <a href=""
+              ><span class="fa-li"><i class="fa-solid fa-gear"></i></span
+              >Settings</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa-li"><i class="fa-solid fa-user"></i></span
+              >Support</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa-li"><i class="fa-solid fa-lock"></i></span
+              >Privacy</a
+            >
+          </li>
         </ul>
       </nav>
     </aside>
 
     <header class="header">
       <div class="search-container">
-        <span class="search-logo"></span>
         <div class="search-bar">
-          <label for="search">Search</label>
-          <input type="text" id="search" name="search" placeholder="Search" />
+          <label for="search"
+            ><button type="button" class="button search-button">
+              <i class="fa-solid fa-magnifying-glass"></i></button
+          ></label>
+          <input type="text" id="search" name="search" class="input-search" />
         </div>
       </div>
 
-      <div class="user-profile">
-        <div class="user-notifications"></div>
-        <div class="user-avatar small-avatar"></div>
-        <div class="user-name">John Doe</div>
+      <div class="user-profile-container">
+        <div class="user-notifications">
+          <button type="button" class="button notifications-button">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+        </div>
+        <div class="user-avatar-container">
+          <img
+            src="assets/images/avatar-small.jpeg"
+            alt="avatar"
+            class="avatar small-avatar"
+          />
+        </div>
+        <div class="user-name-container">
+          <span class="user-name">John Doe</span>
+        </div>
       </div>
 
       <div class="header-user-container">
-        <div class="user-avatar big-avatar"></div>
+        <div class="user-avatar-container">
+          <img
+            src="assets/images/avatar-large.jpeg"
+            alt="avatar"
+            class="avatar large-avatar"
+          />
+        </div>
         <div class="user-welcome">
-          <p>Hi there,</p>
-          <p>John Doe (@johndoe)</p>
+          <h5>Hi there,</h5>
+          <h4>John Doe (@johndoe)</h4>
         </div>
       </div>
 
@@ -63,130 +132,249 @@
 
     <main class="main-container">
       <section class="projects">
-        <h2 class="projects-title">Your Projects</h2>
-        <div class="project-card">
-          <div class="project-header">Super cool project</div>
-          <div class="project-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus ducimus, obcaecati harum commodi accusamus, quas
-            blanditiis tenetur, minus nisi repudiandae quidem animi laudantium
-            quibusdam delectus? Similique distinctio deleniti molestias porro.
+        <h3 class="projects-title title">Your Projects</h3>
+        <div class="projects-container">
+          <div class="card project-card">
+            <div class="project-header">Super cool project</div>
+            <div class="project-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus.
+              </p>
+            </div>
+            <div class="project-footer">
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/star-add.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/add-eye.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/fork.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+            </div>
           </div>
-          <div class="project-footer">
-            <button type="button">Rate</button>
-            <button type="button">Follow</button>
-            <button type="button">Source</button>
-          </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-header">Super cool project</div>
-          <div class="project-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus ducimus, obcaecati harum commodi accusamus, quas
-            blanditiis tenetur, minus nisi repudiandae quidem animi laudantium
-            quibusdam delectus? Similique distinctio deleniti molestias porro.
+          <div class="card project-card">
+            <div class="project-header">Super cool project</div>
+            <div class="project-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus ducimus, obcaecati harum commodi accusamus, quas
+                blanditiis tenetur.
+              </p>
+            </div>
+            <div class="project-footer">
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/star-add.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/add-eye.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/fork.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+            </div>
           </div>
-          <div class="project-footer">
-            <button type="button">Rate</button>
-            <button type="button">Follow</button>
-            <button type="button">Source</button>
-          </div>
-        </div>
 
-        <div class="project-card">
-          <div class="project-header">Super cool project</div>
-          <div class="project-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus ducimus, obcaecati harum commodi accusamus, quas
-            blanditiis tenetur, minus nisi repudiandae quidem animi laudantium
-            quibusdam delectus? Similique distinctio deleniti molestias porro.
+          <div class="card project-card">
+            <div class="project-header">Super cool project</div>
+            <div class="project-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus.
+              </p>
+            </div>
+            <div class="project-footer">
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/star-add.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/add-eye.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/fork.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+            </div>
           </div>
-          <div class="project-footer">
-            <button type="button">Rate</button>
-            <button type="button">Follow</button>
-            <button type="button">Source</button>
+          <div class="card project-card">
+            <div class="project-header">Super cool project</div>
+            <div class="project-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus ducimus, obcaecati harum commodi accusamus, quas
+                blanditiis tenetur, minus nisi.
+              </p>
+            </div>
+            <div class="project-footer">
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/star-add.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/add-eye.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/fork.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="project-header">Super cool project</div>
-          <div class="project-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus ducimus, obcaecati harum commodi accusamus, quas
-            blanditiis tenetur, minus nisi repudiandae quidem animi laudantium
-            quibusdam delectus? Similique distinctio deleniti molestias porro.
+          <div class="card project-card">
+            <div class="project-header">Super cool project</div>
+            <div class="project-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus ducimus, obcaecati harum commodi accusamus, quas
+                blanditiis.
+              </p>
+            </div>
+            <div class="project-footer">
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/star-add.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/add-eye.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/fork.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+            </div>
           </div>
-          <div class="project-footer">
-            <button type="button">Rate</button>
-            <button type="button">Follow</button>
-            <button type="button">Source</button>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-header">Super cool project</div>
-          <div class="project-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus ducimus, obcaecati harum commodi accusamus, quas
-            blanditiis tenetur, minus nisi repudiandae quidem animi laudantium
-            quibusdam delectus? Similique distinctio deleniti molestias porro.
-          </div>
-          <div class="project-footer">
-            <button type="button">Rate</button>
-            <button type="button">Follow</button>
-            <button type="button">Source</button>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-header">Super cool project</div>
-          <div class="project-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus ducimus, obcaecati harum commodi accusamus, quas
-            blanditiis tenetur, minus nisi repudiandae quidem animi laudantium
-            quibusdam delectus? Similique distinctio deleniti molestias porro.
-          </div>
-          <div class="project-footer">
-            <button type="button">Rate</button>
-            <button type="button">Follow</button>
-            <button type="button">Source</button>
+          <div class="card project-card">
+            <div class="project-header">Super cool project</div>
+            <div class="project-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus ducimus, obcaecati harum commodi accusamus, quas.
+              </p>
+            </div>
+            <div class="project-footer">
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/star-add.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/add-eye.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+              <button type="button" class="button project-button">
+                <img
+                  src="assets/icons/fork.svg"
+                  alt="star add"
+                  class="project-action-icon"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
-      <article class="announcements-container">
-        <h2 class="announcements-title">Announcements</h2>
-        <div class="announcements">
+      <article class="announcements">
+        <h3 class="announcements-title title">Announcements</h3>
+        <div class="card announcements-container">
           <article class="announcement">
-            <h3>Announcement</h3>
-            <p>
+            <h4 class="ann-title">Announcement</h4>
+            <div class="ann-paragraph">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Deleniti, ut amet praesentium enim porro impedit quisquam
               temporibus.
-            </p>
+            </div>
           </article>
           <article class="announcement">
-            <h3>Announcement</h3>
-            <p>
+            <h4 class="ann-title">Announcement</h4>
+            <div class="ann-paragraph">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Deleniti, ut amet praesentium enim porro impedit quisquam
               temporibus.
-            </p>
+            </div>
           </article>
           <article class="announcement">
-            <h3>Announcement</h3>
-            <p>
+            <h4 class="ann-title">Announcement</h4>
+            <div class="ann-paragraph">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Deleniti, ut amet praesentium enim porro impedit quisquam
               temporibus.
-            </p>
+            </div>
           </article>
         </div>
       </article>
 
-      <article class="trending-container">
-        <h2 class="trending-title">Trending</h2>
-        <div class="trending">
+      <article class="trending">
+        <h3 class="trending-title title">Trending</h3>
+        <div class="card trending-container">
           <article class="user-card">
-            <div class="user-avatar"></div>
+            <div class="user-avatar">
+              <img
+                src="assets/images/user-1.jpeg"
+                class="avatar small-avatar"
+                alt="user's avatar"
+              />
+            </div>
             <div class="user-info">
               <p class="username">@mikejohn</p>
               <p class="user-title">A perfecionist</p>
@@ -194,7 +382,13 @@
           </article>
 
           <article class="user-card">
-            <div class="user-avatar"></div>
+            <div class="user-avatar">
+              <img
+                src="assets/images/user-2.jpeg"
+                class="avatar small-avatar"
+                alt="user's avatar"
+              />
+            </div>
             <div class="user-info">
               <p class="username">@mikejohn</p>
               <p class="user-title">Troublemaker</p>
@@ -202,7 +396,13 @@
           </article>
 
           <article class="user-card">
-            <div class="user-avatar"></div>
+            <div class="user-avatar">
+              <img
+                src="assets/images/user-3.jpeg"
+                class="avatar small-avatar"
+                alt="user's avatar"
+              />
+            </div>
             <div class="user-info">
               <p class="username">@mikejohn</p>
               <p class="user-title">No traffic maker</p>
@@ -210,7 +410,13 @@
           </article>
 
           <article class="user-card">
-            <div class="user-avatar"></div>
+            <div class="user-avatar">
+              <img
+                src="assets/images/user-4.jpeg"
+                class="avatar small-avatar"
+                alt="user's avatar"
+              />
+            </div>
             <div class="user-info">
               <p class="username">@mikejohn</p>
               <p class="user-title">Somebody you know</p>
