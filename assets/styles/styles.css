@@ -562,6 +562,9 @@ a {
 }
 
 @media (max-width: 658px) {
+  body {
+    grid-template-rows: 80px 1fr;
+  }
   .projects {
     overflow: visible;
     margin-right: 0;
@@ -591,6 +594,8 @@ a {
   .header-user-container {
     margin-left: 15px;
     gap: 5px;
+
+    display: none;
   }
 
   .user-profile-container {
@@ -605,9 +610,18 @@ a {
     font-size: 1rem;
   }
 
+  .header {
+    position: relative;
+
+    grid-template-rows: 1fr;
+  }
   .activities {
     gap: 5px;
     margin-right: 5px;
+
+    position: absolute;
+    right: 0;
+    top: 10px;
   }
 }
 
