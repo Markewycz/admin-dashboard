@@ -504,7 +504,7 @@ a {
 /* MEDIA-QUERIES */
 
 @media (max-width: 1080px) {
-  .activities.activity.icon-activity {
+  .activities .activity .icon-activity {
     display: block !important;
   }
 
