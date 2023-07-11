@@ -573,7 +573,7 @@ a {
 
 @media (max-width: 658px) {
   body {
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 50px 1fr;
   }
   .projects {
     overflow: visible;
@@ -634,31 +634,3 @@ a {
     top: 10px;
   }
 }
-
-/* 
-.main-container {
-  grid-column: 2 / -1;
-  grid-row: 2 / -1;
-
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: repeat(auto-fill, 1fr);
-  grid-template-areas:
-    "projects announcements"
-    "projects announcements"
-    "projects trending"
-    "projects trending";
-} */
-
-/* 
-
-.projects-container {
-  grid-column: 1 / -1;
-  grid-row: 2 / -1;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(180px, 1fr));
-
-  overflow-y: auto;
-}*/
