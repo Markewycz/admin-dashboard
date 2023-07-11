@@ -61,7 +61,7 @@ a {
 }
 
 .icon-activity {
-  display: none;
+  display: none !important;
 }
 
 /* ========== LAYOUT ========== */
@@ -547,9 +547,6 @@ a {
     display: block;
     width: 32px;
     height: 32px;
-  }
-
-  .nav-container {
   }
 
   .nav-container ul li {
