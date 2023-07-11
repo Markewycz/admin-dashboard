@@ -504,8 +504,8 @@ a {
 /* MEDIA-QUERIES */
 
 @media (max-width: 1080px) {
-  .icon-activity {
-    display: block;
+  .activities.activity.icon-activity {
+    display: block !important;
   }
 
   .text-activity {
@@ -526,9 +526,9 @@ a {
 
 @media (max-width: 840px) {
   .fa-ul {
-  margin-left: 0;
+    margin-left: 0;
   }
-  
+
   body {
     grid-template-columns: 50px repeat(4, 1fr);
   }
@@ -624,7 +624,6 @@ a {
     right: 0;
     top: 10px;
   }
-  
 }
 
 /* 
