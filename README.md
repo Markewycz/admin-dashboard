@@ -6,7 +6,7 @@ Basic admin dashboard design implementation
 
 ### Technologies Used
 
-- HTM5
+- HTML5
 - CSS3
 
 ### Description
