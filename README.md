@@ -1,17 +1,10 @@
 # Admin Dashboard
 
-#### By Gracjan Markiewicz
-
-Basic admin dashboard design implementation
-
 ### Technologies Used
 
 - HTML5
-- CSS3
-
-### Description
-
-It is a admin dashboard design implementation divided by semantic sections, with reduced images with nice color pallete.
+- CSS
+- JavaScript
 
 ### Outcome
 - Used Semantic HTML to structure its backbone
@@ -21,11 +14,7 @@ It is a admin dashboard design implementation divided by semantic sections, with
 - Used Git and Github for project management
 - Used MediaQueries for responsive layout
 
-### Setup/Installation Requirements
-
-- Clone this repository to your desktop
-- Navigate to top level of the directory
-- Open `index.html` in your browser
+### <a href="https://markewycz.github.io/admin-dashboard/">Live demo</a> 👈
 
 ### Screenshots
 
@@ -34,10 +23,3 @@ It is a admin dashboard design implementation divided by semantic sections, with
   <img src="https://github.com/Markewycz/admin-dashboard/assets/118677334/4b8ff584-9ea3-41b2-8306-567e14e7d50f" width="50%" />
   <img src="https://github.com/Markewycz/admin-dashboard/assets/118677334/ca9add61-7386-4f69-99fc-2a3ff836058d" width="43%" />
 </p>
-
-
-### License
-
-##### <a href="https://opensource.org/license/mit/">MIT</a>
-
-##### Copyright (c) Gracjan Markiewicz
