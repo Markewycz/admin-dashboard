@@ -4,7 +4,6 @@
 
 - HTML5
 - CSS
-- JavaScript
 
 ### Outcome
 - Used Semantic HTML to structure its backbone
